@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/shapes', ['uses' => 'ShapeController@index']);
+Route::get('/shapes/current', ['uses' => 'ShapeController@getCurrent'])->where('id', '[0-9]+');;
+Route::get('/shapes/current/{id}', ['uses' => 'ShapeController@setCurrent'])->where('id', '[0-9]+');;
