@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Shape;
-use Illuminate\Http\Request;
 
 class ShapeController extends Controller
 {
